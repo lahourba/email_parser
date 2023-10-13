@@ -71,3 +71,6 @@ for filename in os.listdir(directory_path):
 
 # Create a DataFrame from all emails
 df = pd.DataFrame(all_emails)
+
+# Export .csv 
+df.to_csv('parsed_emails.csv') # <-- Change this if you want the .csv savec in a specific path
